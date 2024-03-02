@@ -12,7 +12,7 @@ pipeline {
     stage('Package code') {
       steps {
         sh '''
-  		pip list
+  		python --version
 	'''
 
       }
