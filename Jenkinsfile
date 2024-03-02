@@ -12,7 +12,7 @@ pipeline {
     stage('Package code') {
       steps {
         sh '''
-          tar -czvf my_code.tar.gz .jenkins\workspace\ashok\.git 
+          tar -czvf my_code.tar.gz .jenkins/workspace/ashok/.git 
         '''
       }
     }
