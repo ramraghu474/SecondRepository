@@ -11,7 +11,7 @@ pipeline {
     stage('Package code') {
       steps {
         sh '''
-          tar -czvf my_code.tar.gz ./ramraghu474/SecondRepository 
+          tar -czvf my_code.tar.gz ./ 
         '''
       }
     }
