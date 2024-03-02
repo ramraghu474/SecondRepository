@@ -12,7 +12,7 @@ pipeline {
     stage('Package code') {
       steps {
         sh '''
-  copy  C:/ProgramData/Jenkins/.jenkins/workspace/ashok C:/ProgramData/Jenkins/.jenkins/workspace/vignesh
+  		pip list
 	'''
 
       }
