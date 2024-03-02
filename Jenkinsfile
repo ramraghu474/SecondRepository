@@ -10,9 +10,7 @@ pipeline {
     }
     stage('Package code') {
       steps {
-        sh '''
-          tar -czvf my_code.tar.gz ./ 
-        '''
+        echo 'Balaram'
       }
     }
     stage('Archive artifacts') {
