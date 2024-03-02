@@ -12,7 +12,7 @@ pipeline {
     stage('Package code') {
       steps {
         sh '''
-  tar -czvf my_code.tar.gz C:/ProgramData/Jenkins/.jenkins/workspace/ashok
+  copy  C:/ProgramData/Jenkins/.jenkins/workspace/ashok C:/ProgramData/Jenkins/.jenkins/workspace/vignesh
 	'''
 
       }
