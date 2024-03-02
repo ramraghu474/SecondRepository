@@ -11,7 +11,7 @@ pipeline {
     stage('Package code') {
       steps {
         sh '''
-          tar -czvf my_code.tar.gz ./workspace/ashok --exclude='.git*'
+          tar -czvf my_code.tar.gz ./'https://github.com/ramraghu474/SecondRepository  --exclude='.git*'
         '''
       }
     }
