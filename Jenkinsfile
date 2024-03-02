@@ -12,8 +12,9 @@ pipeline {
     stage('Package code') {
       steps {
         sh '''
-          tar -czvf my_code.tar.gz .jenkins/workspace/ashok/.git 
-        '''
+  tar -czvf my_code.tar.gz C:/ProgramData/Jenkins/.jenkins/workspace/ashok@script/0fe30d4067bcd1c44381f604e379bf3e54d57dc033245a59ea4630f8e484df28\your_desired_directory --exclude='.git*'
+	'''
+
       }
     }
     stage('Archive artifacts') {
