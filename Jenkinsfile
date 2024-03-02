@@ -11,14 +11,13 @@ pipeline {
     stage('Package code') {
       steps {
         sh '''
-          tar -czvf my_code.tar.gz ./workspace/my-git-repo --exclude='.git*'
+          tar -czvf my_code.tar.gz ./ramraghu474/SecondRepository 
         '''
       }
     }
     stage('Archive artifacts') {
       steps {
-        archiveArtifacts artifacts: 'my_code.tar.gz', 
-		fingerprint: true
+        echo 'Raghuram'
       }
     }
   }
