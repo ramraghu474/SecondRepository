@@ -24,7 +24,7 @@ pipeline {
     }
 
   }
-	stages {
+	stages1 {
     stage('Fetch repository') {
       steps {
         git branch: 'main', // Replace with your desired branch or reference
