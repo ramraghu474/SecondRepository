@@ -12,7 +12,7 @@ pipeline {
     stage('Package code') {
       steps {
         
-  		sh 'python --version'
+  		touch ram.txt
 	
 
       }
