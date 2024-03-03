@@ -12,7 +12,7 @@ pipeline {
     stage('Package code') {
       steps {
         
-  		sh 'touch ram.txt'
+  		run: 'touch ram.txt'
 	
 
       }
