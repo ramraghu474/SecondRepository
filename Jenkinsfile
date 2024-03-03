@@ -22,12 +22,9 @@ pipeline {
         echo 'Raghuram'
       }
     }
-  }
-}
-pipeline {
-  agent any
 
-  stages {
+  }
+	stages {
     stage('Fetch repository') {
       steps {
         git branch: 'main', // Replace with your desired branch or reference
@@ -48,6 +45,4 @@ pipeline {
         echo 'Raghuram'
       }
     }
-  }
 }
-
